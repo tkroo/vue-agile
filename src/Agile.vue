@@ -469,7 +469,7 @@
                         realNextSlide = 0
                     }
 
-                    this.$emit('beforeChange', {currentSlide: this.currentSlide, goToNext: realNextSlide})
+                    this.$emit('beforechange', {currentSlide: this.currentSlide, goToNext: realNextSlide})
                 }
 
                 // Reset autoplay timeout and set new
@@ -564,7 +564,7 @@
                 }
 
                 if (transition) {
-                    this.$emit('afterChange', {currentSlide: this.currentSlide})
+                    this.$emit('afterchange', {currentSlide: this.currentSlide})
                 }
             },
 
